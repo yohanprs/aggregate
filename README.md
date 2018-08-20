@@ -20,6 +20,8 @@ ODK Aggregate can be deployed on Google's App Engine, enabling users to quickly 
 * ODK developer Slack chat: [http://slack.opendatakit.org](http://slack.opendatakit.org) 
 * ODK developer Slack archive: [http://opendatakit.slackarchive.io](http://opendatakit.slackarchive.io) 
 * ODK developer wiki: [https://github.com/opendatakit/opendatakit/wiki](https://github.com/opendatakit/opendatakit/wiki)
+* ODK aggregate data access API : https://docs.opendatakit.org/aggregate-data-access/#odk-api
+* ODK Aggregate Source Code Overview: https://github.com/opendatakit/opendatakit/wiki/Aggregate-Source-Code-Overview
 
 ## Getting the code
 
@@ -99,7 +101,7 @@ Aggregate is built using Gradle and Gretty, but we strongly recommend you use [I
 1. Press the + button to add a `Gradle` configuration
 
     * Name: `appStartWar` (or whatever you'd like)
-    * Gradle project: `odk-aggregate`
+    * Gradle project: `odk-aggregate` (select the project folder by clicking the ... button)
     * Tasks: `appStartWar`
 
 1. Press `OK`
