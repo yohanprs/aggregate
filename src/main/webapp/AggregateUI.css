@@ -251,6 +251,8 @@ a,a:visited,a:hover {
 	left: 20px;
 	top: 8px;
 	padding-bottom: 4px;
+	width: 150px;
+	padding-top: 20px;
 }
 
 #form_title_cell {
@@ -291,6 +293,7 @@ a,a:visited,a:hover {
 
 #filters_container {
 	border-right: 1px solid #07115A;
+	background: #e5e5e5;
 }
 
 #help_panel {
@@ -309,4 +312,11 @@ a,a:visited,a:hover {
 	font-weight: bold;
 	padding-left: 20px;
 	color: #0044A7;
+}
+#dynamic_content {
+    background: #21242d;
+}
+.gwt-DecoratedTabBar {
+    padding: 5em 5em 2.5em 5em;
+    padding-left: 10em;
 }
