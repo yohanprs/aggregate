@@ -62,9 +62,11 @@ public class FiltersDataPanel extends ScrollPanel {
     getElement().setId("filters_container");
 
     FlowPanel panel = new FlowPanel();
+    panel.getElement().setId("filters_container_panel");
    // panel.add( new HTML("<h2 id=\"filter_header\">" + HtmlConsts.SPACE + "Filters</h2>"));
   
     FlexTable filterGroupButtons = new FlexTable();
+    filterGroupButtons.getElement().setId("filter_group_buttons");
     filterGroupButtons.setWidget(0, 0, new SaveFilterGroupButton(parentSubTab));
     copyButton = new SaveAsFilterGroupButton(parentSubTab);
     filterGroupButtons.setWidget(0, 1, copyButton);

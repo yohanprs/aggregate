@@ -11,19 +11,22 @@
 	padding: 0px 1px 0px 1px;
 	text-align: center;
 }
+tr.titleBar{
+    border-bottom: 1px solid white;
+}
 .titleBar td {
 	padding-left: 6px;
 	padding-right: 6px;
 	text-align: center;
-	background: #07115A;
-	color: #a1abff;
+	background: transparent;
+	color: white;
 	font-weight: bold;
 }
 .dataTable {
 	border-collapse: collapse;
-	border-width: 1px;
+	/*border-width: 1px;
 	border-style: solid;
-	border-color: #07115A;
+	border-color: #07115A;*/
 }
 
 .exportTable td {
