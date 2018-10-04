@@ -1,5 +1,5 @@
 .evenTableRow td {
-	background-color: #dfdfdf;
+	/*background-color: #dfdfdf;*/
 }
 .dataTable .dataLeft {
 	text-align: left;
@@ -8,10 +8,10 @@
 	text-align: right;
 }
 .dataTable td {
-	padding: 0px 1px 0px 1px;
+	padding: 0px 5px 0px 5px;
 	text-align: center;
 }
-tr.titleBar{
+.dataTable tr{
     border-bottom: 1px solid white;
 }
 .titleBar td {

@@ -63,6 +63,7 @@
 
 .gwt-Button-negative {
 	background: #D12F19;
+	border: 1px solid #D12F19;
 }
 .gwt-Button-negative:hover {
 	background: #FBE3E4;
@@ -87,6 +88,7 @@
 
 .gwt-Button-positive {
 	background: #529214;
+	border: 1px solid #529214;
 }
 .gwt-Button-positive:hover {
 	background: #E6EFC2;
