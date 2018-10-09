@@ -42,7 +42,7 @@ public final class PublishPopup extends AbstractPopupBase {
 
   private static final String EMPTY_STRING = "";
   private static final String HTTP_LOCALHOST = "http://localhost";
-  private static final String BUTTON_TXT = "<img src=\"images/green_right_arrow.png\" /> Publish";
+  private static final String BUTTON_TXT = "<img src=\"images/publish.png\" /> Publish";
   private static final String TOOLTIP_TXT = "Publish the data";
   private static final String HELP_BALLOON_TXT = "This will publish the data to Google Fusion Tables, "
       + " Google Spreadsheets, a REDCap server, or a server accepting JSON content.";

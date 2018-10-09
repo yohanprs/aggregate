@@ -44,7 +44,7 @@ public final class ExportPopup extends AbstractPopupBase {
   private static final String FILE_TYPE_TOOLTIP = "Type of File to Generate";
   private static final String FILE_TYPE_BALLOON = "Select the type of file you wish to create.";
 
-  private static final String CREATE_BUTTON_TXT = "<img src=\"images/green_right_arrow.png\" /> Export";
+  private static final String CREATE_BUTTON_TXT = "<img src=\"images/export.png\" /> Export";
   private static final String CREATE_BUTTON_TOOLTIP = "Create Export File";
   private static final String CREATE_BUTTON_HELP_BALLOON = "This creates either a CSV or KML file of your data.";
 

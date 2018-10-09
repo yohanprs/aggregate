@@ -41,7 +41,7 @@ public final class KmlOptionsPopup extends AbstractPopupBase {
   private static final String EXPORT_ERROR_MSG = "One of the KML options was invalid. For example the Geopoint field or your Title field were invalid";
   private static final String KML_ELEMENTS_ZERO_ERROR_MSG = "To export data into KML format please select at least on KML element";
   
-  private static final String CREATE_BUTTON_TXT = "<img src=\"images/green_right_arrow.png\" /> Export";
+  private static final String CREATE_BUTTON_TXT = "<img src=\"images/export.png\" /> Export";
   private static final String CREATE_BUTTON_TOOLTIP = "Create KML File";
   private static final String CREATE_BUTTON_HELP_BALLOON = "This exports your data into a KML file with the following options.";
 

@@ -24,7 +24,7 @@ import com.google.gwt.event.dom.client.ClickHandler;
 
 public final class ExportButton extends AggregateButton implements ClickHandler {
 
-  private static final String BUTTON_TXT = "<img src=\"images/green_right_arrow.png\" /> Export";
+  private static final String BUTTON_TXT = "<img src=\"images/export.png\" /> Export";
   private static final String TOOLTIP_TEXT = "Export the data";
   private static final String HELP_BALLOON_TXT = "Export the data to a CSV or KML file.";
 

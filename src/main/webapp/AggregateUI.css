@@ -302,9 +302,9 @@ background: #4f5561;
 
 #filter_header {
 	color: #686E93;
-	margin-top: 0px;
+	margin-top: 10px;
 	padding-top: 0px;
-	margin-bottom: 0px;
+	margin-bottom: 10px;
 	padding-bottom: 0px;
 }
 
@@ -364,6 +364,10 @@ color: #686E93;
 }
 
 #filter_group_buttons .gwt-Button{
+    width: 100%;
+}
+
+#filter_global{
     width: 100%;
 }
 

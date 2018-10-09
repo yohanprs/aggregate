@@ -80,7 +80,9 @@ public class FiltersDataPanel extends ScrollPanel {
     HTML separator = new HTML("<hr id=\"filter_separator\">");
 
     VerticalPanel filterGlobal = new VerticalPanel();
+    filterGlobal.getElement().setId("filter_global");
     FlexTable paginationTable = new FlexTable();
+    paginationTable.getElement().setId("filter_pagination_table");
     paginationTable.setHTML(0, 0, "<p id=\"filter_header\">Submissions per page</p>");
     paginationTable.setWidget(0, 1, new PaginationNumTextBox(parentSubTab));
     filterGlobal.add(paginationTable);

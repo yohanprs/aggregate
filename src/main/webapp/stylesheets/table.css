@@ -17,6 +17,8 @@
 .titleBar td {
 	padding-left: 6px;
 	padding-right: 6px;
+	padding-bottom: 5px;
+    padding-top: 5px;
 	text-align: center;
 	background: transparent;
 	color: white;

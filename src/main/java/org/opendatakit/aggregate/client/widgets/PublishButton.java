@@ -25,7 +25,7 @@ import com.google.gwt.event.dom.client.ClickHandler;
 
 public final class PublishButton extends AggregateButton implements ClickHandler {
 
-  private static final String BUTTON_TXT = "<img src=\"images/green_right_arrow.png\" /> Publish";
+  private static final String BUTTON_TXT = "<img src=\"images/publish.png\" /> Publish";
   private static final String TOOLTIP_TXT = "Publish the data";
   private static final String HELP_BALLOON_TXT = "This will publish the data to Google Fusion Tables or Google Spreadsheets.";
 
