@@ -92,10 +92,12 @@ public class FiltersDataPanel extends ScrollPanel {
 
     // Filters applied header
     filterHeader = new FlowPanel();
+    filterHeader.getElement().setId("filter_applied_header");
     panel.add(filterHeader);
 
     // create tree
     filtersTree = new Tree();
+    filtersTree.getElement().setId("filters_tree");
     panel.add(filtersTree);
 
     // create the root as the new filter button

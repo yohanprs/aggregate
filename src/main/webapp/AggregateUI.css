@@ -119,9 +119,9 @@ a,a:visited,a:hover {
     /*display: table;
     margin-left: auto;
     margin-right: auto;*/
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-right: 10px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
 }
 
 #submission_container,#filters_container,#help_container {
@@ -130,6 +130,10 @@ a,a:visited,a:hover {
 
 #submission_container{
 background: #4f5561;
+}
+
+#submission_container div{
+    padding: 20px;
 }
 
 .not_secure_message {
@@ -311,6 +315,10 @@ background: #4f5561;
 #submission_nav_table {
 	width: 100%;
 	border-bottom: 1px solid #07115A;
+	padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #filters_container {
@@ -353,6 +361,7 @@ background: #4f5561;
    background: #c2ba96;
    color: white;
    border: 1px solid #c2ba96;
+   width: 100%;
 }
 
 #filters_container_panel .gwt-Label{
@@ -369,6 +378,15 @@ color: #686E93;
 
 #filter_global{
     width: 100%;
+}
+
+#filter_applied_header table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#filter_applied_header td{
+   padding: 0px;
 }
 
 
