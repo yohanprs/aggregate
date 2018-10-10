@@ -92,7 +92,8 @@ Aggregate is built using Gradle and Gretty, but we strongly recommend you use [I
     | `gaeEmail` |  | Only required for GAE deployment. The email account of the owner of the Google AppEngine instance |
     | `org.gradle.java.home` |  | Set path to a Java 8 install. This is only required if you have Java 9 installed.  |
 
-    - Any property can be overwritten by passing `-Pkey=value` arguments to any Gradle task. 
+    - Any property can be overwritten by passing `-Pkey=value` arguments to any Gradle task.
+    - if 'warMode' is 'installer', you can find the output war file in [ProjectFolder]\build\libs
     
 ### Run
 
