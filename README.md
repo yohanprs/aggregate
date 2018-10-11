@@ -93,7 +93,7 @@ Aggregate is built using Gradle and Gretty, but we strongly recommend you use [I
     | `org.gradle.java.home` |  | Set path to a Java 8 install. This is only required if you have Java 9 installed.  |
 
     - Any property can be overwritten by passing `-Pkey=value` arguments to any Gradle task.
-    - if 'warMode' is 'installer', you can find the output war file in [ProjectFolder]\build\libs
+    - The output war file can be found in `[ProjectFolder]\build\libs`
     
 ### Run
 
@@ -183,6 +183,49 @@ By default, Gretty will launch a server using a `localhost` address which will n
 1. To run Aggregate, go to the `Run` menu, then to `Run...` and `Run` the `gaeUpdate` configuration. This will compile Aggregate and upload it to App Engine, replacing your running instance with the new version.
 
 This process can fail sometimes. If that happens, you will have to manually rollback the failed update launching the `gaeRollback` task. You can follow these same steps to create a new Run Configuration for it. 
+
+### Deploy to AZURE Linux Virtual Machine (for EVI only)
+The rebranded ODK aggregate is deployed to a VM in azure with the url:
+http://eviodkaggregate.southeastasia.cloudapp.azure.com:8080/EVIAggregate
+
+Credentials dropbox folder is in : `Dropbox (Advancing Engineerin)\Credentials\ODK aggregate deployment on cloud`
+
+1. stop the current deployed ODK aggregate
+    * connect to management web page of tomcat with the url : http://eviodkaggregate.southeastasia.cloudapp.azure.com:8080/manager/html/
+    * user login can be found in credentials dropbox folder
+    * go to List Applications
+    * stop Application `EVIAggregate`
+1. Make a back up of the current deployment.
+    * connect to the VM using Remote Desktop or SSH
+    * navigate to webapps folder of the tomcat instance `(/var/lib/tomcat8/webapps/)`
+    * copy the current deployed EVIAggregate folder and put it some where safe. Rename the copied folder as EVIAggregateOld
+1. build the modified EVI branded ODK aggregate (branch EVI)
+    * make sure that `warMode=installer` in `gradle.properties`
+    * copy the output war file in `[ProjectFolder]\build\libs`. It should be the latest modified file.
+    * paste and rename the war file as EVIAggregateNew.zip  and put it some where safe
+ 1. make the new war file
+    * extract EVIAggregateNew.zip to a folder EVIAggregateNew
+    * make a copy of EVIAggregateOld folder and copy the contents of folder EVIAggregateNew into it.
+    * zip the modified contents into zip file EVIAggregate.zip
+    * rename EVIAggregate.zip to EVIAggregate.war
+ 1. backup the new war file
+    * copy the new war file to dropbox folder `Dropbox (Advancing Engineerin)\EVT Software Dev Team\Projects\ODK & ONA\ODK aggregate\Deployed war backup`
+    * follow the previous backups format
+ 1. undeploy the previous version of ODK aggregate
+    * connect to management web page of tomcat with the url : http://eviodkaggregate.southeastasia.cloudapp.azure.com:8080/manager/html/
+    * go to List Applications
+    * undeploy Application `EVIAggregate`
+ 1. deploy the new version
+    * still in the management->List Applications page, scroll and go to the `deploy` section
+    * click `choose file` in form `WAR file to deploy`
+    * choose file EVIAggregate.war that contains the new version and click 'deploy'
+  1. check ODK aggregate is working
+  1. if ODK aggregate is NOT working and you need to revert
+        * zip contents of EVIAggregateOld into zip file EVIAggregate.zip and rename EVIAggregate.zip to EVIAggregate.war
+        * redo actions in step 6
+        * deploy the old version by reffering actions in step 7
+
+
 
 ## Extended topics
 
