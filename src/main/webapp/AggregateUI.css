@@ -171,7 +171,7 @@ background: #4f5561;
 }
 
 .stretch_popup_header {
-	background-color: #ECF5F6;
+	/*background-color: #ECF5F6;*/
 	width: 100%;
 }
 
@@ -387,6 +387,10 @@ color: #686E93;
 
 #filter_applied_header td{
    padding: 0px;
+}
+
+.gm-style .gm-style-iw{
+    color:black;
 }
 
 
